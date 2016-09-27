@@ -7,9 +7,9 @@ import createLogger from 'redux-logger';
 
 const thunk = (store) => (next) => (action) =>
   typeof action === 'function' ?
-    action(store.dispatch) :
+    action(store.dispatch, store.getState) :
     next(action);
-
+    
 const configureStore = () => {
   //const middlewares = [promise];
   const middlewares = [thunk];

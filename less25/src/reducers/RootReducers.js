@@ -28,3 +28,6 @@ export const getVisibleTodos = (state, filter) => {
 export const getIsFstching =  (state, filter) => {
   fromList.getIsFstching(state.listByFilter[filter]);
 };
+
+export const getErrorMessage = (state, filter) =>
+  fromList.getErrorMessage(state.listByFilter[filter]);

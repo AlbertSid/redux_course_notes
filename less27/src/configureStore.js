@@ -1,14 +1,17 @@
 
 
-import RootReducers from './reducers/RootReducers'
+import RootReducers from './reducers'
 import { createStore, applyMiddleware } from 'redux';
 //import promise from 'redux-promise';
+
+import thunk from 'redux-thunk';
+
 import createLogger from 'redux-logger';
 
-const thunk = (store) => (next) => (action) =>
-  typeof action === 'function' ?
-    action(store.dispatch) :
-    next(action);
+// const thunk = (store) => (next) => (action) =>
+//   typeof action === 'function' ?
+//     action(store.dispatch, store.getState) :
+//     next(action);
 
 const configureStore = () => {
   //const middlewares = [promise];

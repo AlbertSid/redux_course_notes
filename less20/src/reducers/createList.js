@@ -1,6 +1,6 @@
 const createList = (filter) =>{
 	return (state = [], action) => {
- 		if (action.filter !== 'all') {
+ 		if (action.filter !== filter) {
     		return state;
   		}
 		switch (action.type) {
