@@ -4,6 +4,10 @@
 
 This repo contains notes from [Dan Abramov's](https://github.com/gaearon) second [Redux course](https://egghead.io/courses/building-react-applications-with-idiomatic-redux) on Egghead.io.
 
+[redux_course_notes](https://github.com/tayiorbeii/egghead.io_idiomatic_redux_course_notes)
+
+
+
 ## 01\. Simplifying the Arrow Functions
 See how ES6 features can be used to clean up arrow functions even more. [Video](https://egghead.io/lessons/javascript-redux-simplifying-the-arrow-functions)
 
